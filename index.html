@@ -1,28 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de sapatos</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; color: #333; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
-        .container { background: #fbfbfb; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 600px; text-align: center; border-top: 5px solid #d9534f; }
-        h1 { color: #534b4b; }
-        p { line-height: 1.6; }
-        .cta-button { display: inline-block; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 20px; }
-        .cta-button:hover { background-color: #555; }
-        .footer { margin-top: 30px; font-size: 0.9em; color: #777; }
-    </style>
+<html>
+    <head>
+        <title>App Web Identificador de Sons</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div style="font-size: 80px;">👟</div>
-        <h1>Bem-vindo à nossa loja</h1>
-        <p><strong>Prezados clientes,</strong></p>
-        <p> A procura de um tênis, então venha conhecer nossa loja, aqui  você encontra </p>
-        <div class="footer">
-            <p>Dúvidas? Entre em contato: <strong>00001214179149sp@al.educacao.sp.gov.br</strong></p>
+  <div class="col-xs-12 header_div text-center">
+    <h2>Alienígenas controlados por som</h2>     
+    <p>Observação: Reproduza diferentes sons, como: palmas, estalos e sinos, para fazer os alienígenas dançarem.</p>     
+  </div>
+  <div class="main_div">
+    <center>
+        <br>
+        <button class="btn btn-warning" onclick="startClassification();">INICIAR</button>
+        <h3 id="result_label">Posso ouvir: </h3>
+        <h4 id="result_confidence">Precisão: </h4>
+          <br>
+          <img src="aliens-01.png" id="alien1" width="300" height="300">
+          <img src="aliens-02.png" id="alien2" width="300" height="300">
+          <img src="aliens-03.png" id="alien3" width="300" height="300">
+          <img src="aliens-04.png" id="alien4" width="300" height="300">
+        </center>
         </div>
-    </div>
-</body>
+        <div class="copy_right_footer">
+          Desenvolvido por - Equipe BYJU'S
+        </div>
+  <script src="main.js"></script>
+    </body>
+  </html>
 </html>
